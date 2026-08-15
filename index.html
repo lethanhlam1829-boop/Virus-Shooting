@@ -2,15 +2,38 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Virus!Shooting</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="game-container">
-        <canvas id="gameCanvas"></canvas>
-    </div>
-    <script src="src/player.js"></script>
-    <script src="src/main.js"></script>
-</body>
-</html>
+    <div id="menu-view">
+<!-- Cột 1: Prototype -->
+        <div class="menu-column" id="col-prototype">
+            <div class="prototype-banner">
+                <!-- Thay sticker bằng một ô trống hoặc text đơn giản -->
+                <div class="skull-placeholder">[ Hình ảnh ]</div>
+                <h2>Prototype</h2>
+            </div>
+        </div>
+
+        <!-- ... (Cột 2 giữ nguyên) ... -->
+
+        <!-- Cột 3: Skill Tree -->
+        <div class="menu-column" id="col-skilltree">
+            <h2 class="col-title">Skill Tree</h2>
+            <div class="tree-grid">
+                <!-- Bỏ sticker, dùng data-tooltip chứa thông tin nâng cấp -->
+                <div class="node node-top" data-tooltip="Tăng thời gian duy trì vũ khí (Duration)"></div>
+                <div class="node node-left" data-tooltip="Unlock vũ khí: Uzi"></div>
+                <div class="node node-center" data-tooltip="Tăng 10% Sát thương tổng"></div>
+                <div class="node node-right" data-tooltip="Thêm 1 ô chọn thông số (2 -> 3)"></div>
+                <div class="node node-bottom" data-tooltip="Tăng 10% May mắn"></div>
+                
+                <!-- Các đường nối (Connector) -->
+                <div class="line line-v-top"></div>
+                <div class="line line-v-bot"></div>
+                <div class="line line-h-left"></div>
+                <div class="line line-h-right"></div>
+            </div>
+        </div>
